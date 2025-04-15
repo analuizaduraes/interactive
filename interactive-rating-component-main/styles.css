@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,700;1,700&display=swap');
+
+:root {
+    --black-background: #131518;
+    --card-background: #232A34;
+    --dark-blue-background: #262E38;
+    --orange: #FC7614;
+    --white: #FFFFFF;
+    --light-grey: #969FAD;
+    --medium-grey: #7C8798;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body * {
+    font-family: 'Overpass', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-size: 1.5rem;
+    font-weight: 700;
+    background-color: var(--black-background);
+}
+
+.card {
+    background-color: var(--card-background);
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+    padding: 24px;
+    padding-bottom: 32px;
+    max-width: 327px;
+}
+
+.title {
+    color: var(--white);
+    font-size: 2.4rem;
+    margin-top: 16px;
+}
+
+@media screen and (min-width: 1440px) {
+    .title {
+        font-size: 2.8rem;
+    }
+}
+
+.text {
+    font-weight: 400;
+    color: var(--light-grey);
+    font-size: 1.4rem;
+    margin-top: 10px;
+    margin-bottom: 24px;
+    line-height: 22px;
+}
+
+.button {
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    padding: 12px 109px;
+    border-radius: 22.5px;
+    border: none;
+    background-color: var(--orange);
+    color: var(--white);
+    cursor: pointer;
+    transition: all .3s linear;
+}
+
+.button:hover {
+    color: var(--orange);
+    background-color: var(--white);
+}
+
+.avaliação {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 17px;
+}
+
+.aval {
+    background-color: var(--dark-blue-background);
+    border-radius: 50%;
+    width: 42px;
+    height: 42px;
+    color: var(--medium-grey);
+    cursor: pointer;
+    transition: all .3s linear;
+    text-align: center;
+    /*vertical-align: baseline;*/
+    font-size: 1.4rem;
+}
+
+.aval:hover {
+    color: var(--white);
+    background-color: var(--medium-grey);
+}
+
+.active {
+    background-color: var(--orange);
+}
+
+.aval_btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.icon {
+    background-color: var(--dark-blue-background);
+    border-radius: 50%;
+    width: 42px;
+    height: 42px;
+    text-align: center;
+}
+
+.container {
+    margin-left: 24px;
+    margin-right: 24px;
+}
+
+.hidden {
+    display: none;
+}
+
+/* isso aqui tudo se refere ao card-2 aqui embaixo */
+/*
+.image-cel {
+    max-width: 144px;
+}
+
+.card {
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.selectors {
+    color: var(--orange);
+    border-radius: 22.5px;
+    background-color: var(--dark-blue-background);
+    padding: 5px 12px;
+}
+
+.text-card2 {
+    text-align: center;
+    font-weight: 400;
+    color: var(--light-grey);
+    font-size: 1.4rem;
+    margin-top: 10px;
+    margin-bottom: 24px;
+    line-height: 22px;
+}*/
+
